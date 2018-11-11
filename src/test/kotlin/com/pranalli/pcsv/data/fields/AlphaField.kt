@@ -1,6 +1,6 @@
 package com.pranalli.pcsv.data.fields
 
-class AlphaField(private val string: String) : CsvField<String>() {
+class AlphaField(private val string: String) : CsvField() {
     override fun getValue() = string
 
     override fun getSerializedValue(): String {
