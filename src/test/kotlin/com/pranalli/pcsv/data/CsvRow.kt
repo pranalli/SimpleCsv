@@ -1,13 +1,13 @@
 package com.pranalli.pcsv.data
 
-import com.pranalli.pcsv.data.fields.CsvField
+import com.pranalli.pcsv.data.fields.CsvValue
 import com.pranalli.pcsv.data.impl.IRow
 import java.util.*
 
-class CsvRow : IRow<CsvField> {
-    private val fields = ArrayList<CsvField>()
+class CsvRow : IRow<CsvValue> {
+    private val fields = ArrayList<CsvValue>()
 
-    override fun getValues(): Collection<CsvField> {
+    override fun getValues(): Collection<CsvValue> {
         return Collections.unmodifiableCollection(fields)
     }
 }
