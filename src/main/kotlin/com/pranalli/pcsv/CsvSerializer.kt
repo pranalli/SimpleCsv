@@ -4,7 +4,7 @@ import com.pranalli.pcsv.data.CsvFile
 
 object CsvSerializer {
 
-    fun toCsv(file: CsvFile, params: CsvSerializerParams) : String {
+    fun toCsv(file: CsvFile, params: CsvSerializerParams? = null) : String {
         val sb = StringBuilder()
         file.getRows().forEachIndexed { rowIndex, row ->
 
