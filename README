@@ -1,0 +1,8 @@
+SimpleCsv is nothing more than the name implies.
+
+It is a simple CSV utility written in Kotlin.
+
+SimpleCsv.read(File)
+SimpleCsv.read(String)
+
+That's it.  Have fun.
