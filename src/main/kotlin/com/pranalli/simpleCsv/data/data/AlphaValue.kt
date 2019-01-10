@@ -1,5 +1,12 @@
-package com.pranalli.pcsv.data.fields
+package com.pranalli.simpleCsv.data.data
 
+/**
+ * An object containing alpha values.  It appropriately handles
+ * whether a value should be quoted or not when serialized.
+ *
+ * @author Pasquale A. Ranalli
+ * @email pranalli@gmail.com
+ */
 class AlphaValue(private val string: CharSequence) : CsvValue() {
     override fun getValue() = string
 

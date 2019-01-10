@@ -1,10 +1,19 @@
-package com.pranalli.pcsv.data.fields
+package com.pranalli.simpleCsv.data.data
 
-import com.pranalli.pcsv.data.impl.IField
-import java.math.BigDecimal
+import com.pranalli.simpleCsv.data.impl.IField
 
+/**
+ * [CsvValue] is a simple wrapper for any given data object
+ *
+ * @author Pasquale A. Ranalli
+ * @email pranalli@gmail.com
+ */
 abstract class CsvValue : IField<Any> {
     abstract fun getSerializedValue() : String
+
+    override fun toString(): String {
+        return getSerializedValue()
+    }
 
     companion object {
         fun of(value: Any) : CsvValue {
@@ -12,12 +21,13 @@ abstract class CsvValue : IField<Any> {
                 is CharSequence -> {
                     AlphaValue(value)
                 }
-                is BigDecimal -> {
-                    NumericValue(value)
-                }
                 is Number -> {
                     NumericValue(value)
                 }
+                is CsvValue -> {
+                    value
+                }
+
                 else -> throw NotImplementedError("Class ${value::class.java.simpleName} not yet implemented.")
             }
         }

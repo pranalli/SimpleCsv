@@ -1,9 +1,12 @@
-package com.pranalli.pcsv.data
+package com.pranalli.simpleCsv.data.data
 
-import com.pranalli.pcsv.data.fields.CsvValue
-import com.pranalli.pcsv.data.impl.IRow
+import com.pranalli.simpleCsv.data.impl.IRow
 import java.util.*
 
+/**
+ * @author Pasquale A. Ranalli
+ * @email pranalli@gmail.com
+ */
 class CsvRow : IRow<CsvValue> {
     private val fields = ArrayList<CsvValue>()
 
