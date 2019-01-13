@@ -8,7 +8,7 @@ import java.util.*
  * @author Pasquale A. Ranalli
  * @email pranalli@gmail.com
  */
-class CsvFile: IFile<CsvValue, CsvRow> {
+class CsvFile internal constructor(): IFile<CsvValue, CsvRow> {
     private val rows = ArrayList<CsvRow>()
 
     fun add(row: CsvRow) {
