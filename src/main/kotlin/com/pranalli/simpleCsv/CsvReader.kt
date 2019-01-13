@@ -17,7 +17,7 @@ import java.lang.StringBuilder
  * @author Pasquale A. Ranalli
  * @email pranalli@gmail.com
  */
-class CsvReader : AutoCloseable {
+internal class CsvReader : AutoCloseable {
 
     internal fun read(file: File): CsvFile {
         return read(FileReader(file))
