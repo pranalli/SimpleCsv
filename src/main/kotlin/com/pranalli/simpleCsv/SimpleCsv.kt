@@ -13,10 +13,12 @@ import java.io.File
  * @email pranalli@gmail.com
  */
 object SimpleCsv {
+    @JvmStatic
     fun read(file: File) : CsvFile {
         return CsvReader().use { it.read(file) }
     }
 
+    @JvmStatic
     fun read(csvString: String) : CsvFile {
         return CsvReader().use { it.read(csvString) }
     }
