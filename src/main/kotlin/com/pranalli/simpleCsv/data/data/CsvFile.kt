@@ -9,14 +9,18 @@ import java.util.*
  * @email pranalli@gmail.com
  */
 class CsvFile internal constructor(): IFile<CsvValue, CsvRow> {
-    private val rows = ArrayList<CsvRow>()
+    private val _rows = ArrayList<CsvRow>()
 
     fun add(row: CsvRow) {
-        rows.add(row)
+        _rows.add(row)
+    }
+
+    fun addAll(rows: Collection<CsvRow>) {
+        this._rows.addAll(rows)
     }
 
     override fun getRows() : Collection<CsvRow> {
-        return Collections.unmodifiableCollection(rows)
+        return Collections.unmodifiableCollection(_rows)
     }
 
     override fun toString(): String {
