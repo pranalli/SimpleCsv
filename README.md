@@ -11,7 +11,7 @@ Build example:
 ```kotlin
 val builder = SimpleCsv.build()
 builder.newRow().append("John").append("Doe")
-builder.newRow().append("8,000").append("8000")
+builder.newRow().append("8,000").append(8000)
 builder.newRow().append("123 Main St").append("Anytown, USA")
 
 val csv = builder.create()
