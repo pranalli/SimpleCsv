@@ -11,6 +11,10 @@ import java.util.*
 class CsvFile internal constructor(): IFile<CsvValue, CsvRow> {
     private val _rows = ArrayList<CsvRow>()
 
+    internal constructor(rows: Collection<CsvRow>) : this() {
+        this.addAll(rows)
+    }
+
     fun add(row: CsvRow) {
         _rows.add(row)
     }
