@@ -2,9 +2,9 @@ SimpleCsv is nothing more than the name implies.
 
 It is a simple CSV utility written in Kotlin.
 
-SimpleCsv.read(File)
-SimpleCsv.read(String)
-SimpleCsv.build()
+* SimpleCsv.read(File)
+* SimpleCsv.read(String)
+* SimpleCsv.build()
 
 Build example:
 
