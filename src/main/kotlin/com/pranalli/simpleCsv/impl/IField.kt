@@ -1,4 +1,4 @@
-package com.pranalli.simpleCsv.data.impl
+package com.pranalli.simpleCsv.impl
 
 /**
  * The [IField] interface is a simple wrapper for any given object, typically

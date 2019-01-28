@@ -1,6 +1,6 @@
-package com.pranalli.simpleCsv.data.data
+package com.pranalli.simpleCsv.data
 
-import com.pranalli.simpleCsv.data.impl.IRow
+import com.pranalli.simpleCsv.impl.IRow
 import java.util.*
 
 /**

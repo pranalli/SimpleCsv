@@ -1,7 +1,7 @@
 package com.pranalli.simpleCsv
 
-import com.pranalli.simpleCsv.data.data.CsvFile
-import com.pranalli.simpleCsv.data.data.CsvRow
+import com.pranalli.simpleCsv.data.CsvFile
+import com.pranalli.simpleCsv.data.CsvRow
 import java.io.File
 
 /**

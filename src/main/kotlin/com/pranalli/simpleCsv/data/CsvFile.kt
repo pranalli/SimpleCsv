@@ -1,7 +1,7 @@
-package com.pranalli.simpleCsv.data.data
+package com.pranalli.simpleCsv.data
 
 import com.pranalli.simpleCsv.CsvSerializer
-import com.pranalli.simpleCsv.data.impl.IFile
+import com.pranalli.simpleCsv.impl.IFile
 import java.util.*
 
 /**

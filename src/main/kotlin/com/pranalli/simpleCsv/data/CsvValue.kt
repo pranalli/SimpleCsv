@@ -1,6 +1,6 @@
-package com.pranalli.simpleCsv.data.data
+package com.pranalli.simpleCsv.data
 
-import com.pranalli.simpleCsv.data.impl.IField
+import com.pranalli.simpleCsv.impl.IField
 
 /**
  * [CsvValue] is a simple wrapper for any given data object
