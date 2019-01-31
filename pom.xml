@@ -7,12 +7,14 @@
     <artifactId>simpleCsv</artifactId>
     <version>1.0</version>
     <packaging>jar</packaging>
+
     <properties>
         <maven.version>3.6.0</maven.version>
+        <kotlin.version>1.3.11</kotlin.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-        <kotlin.version>1.3.11</kotlin.version>
     </properties>
+
     <contributors>
         <contributor>
             <name>Pasquale Ranalli</name>
@@ -20,16 +22,15 @@
             <url>http://www.pranalli.com</url>
         </contributor>
     </contributors>
+
     <build>
         <sourceDirectory>${project.basedir}/src/main/kotlin</sourceDirectory>
         <testSourceDirectory>${project.basedir}/src/test/kotlin</testSourceDirectory>
-
         <plugins>
             <plugin>
                 <artifactId>kotlin-maven-plugin</artifactId>
                 <groupId>org.jetbrains.kotlin</groupId>
                 <version>${kotlin.version}</version>
-
                 <executions>
                     <execution>
                         <id>compile</id>
@@ -37,7 +38,6 @@
                             <goal>compile</goal>
                         </goals>
                     </execution>
-
                     <execution>
                         <id>test-compile</id>
                         <goals>
@@ -48,6 +48,7 @@
             </plugin>
         </plugins>
     </build>
+
     <dependencies>
         <dependency>
             <groupId>org.jetbrains.kotlin</groupId>
