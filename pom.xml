@@ -6,7 +6,10 @@
     <groupId>com.pranalli</groupId>
     <artifactId>simpleCsv</artifactId>
     <version>1.0</version>
-    <packaging>jar</packaging>
+    <modules>
+        <module>../simplePgp</module>
+    </modules>
+    <packaging>pom</packaging>
 
     <properties>
         <maven.version>3.6.0</maven.version>

@@ -1,8 +1,8 @@
-package com.pranalli.simpleCsv
+package com.pranalli.simple.csv
 
-import com.pranalli.simpleCsv.data.CsvFile
-import com.pranalli.simpleCsv.data.CsvRow
-import com.pranalli.simpleCsv.data.CsvValue
+import com.pranalli.simple.csv.data.CsvFile
+import com.pranalli.simple.csv.data.CsvRow
+import com.pranalli.simple.csv.data.CsvValue
 import java.io.File
 import java.io.FileReader
 import java.io.Reader

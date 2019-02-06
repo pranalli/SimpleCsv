@@ -1,6 +1,6 @@
-package com.pranalli.simpleCsv
+package com.pranalli.simple.csv
 
-import com.pranalli.simpleCsv.data.CsvFile
+import com.pranalli.simple.csv.data.CsvFile
 
 /**
  * [CsvSerializer] is an internal utility class for serializing

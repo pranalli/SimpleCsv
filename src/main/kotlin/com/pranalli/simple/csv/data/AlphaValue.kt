@@ -1,4 +1,4 @@
-package com.pranalli.simpleCsv.data
+package com.pranalli.simple.csv.data
 
 /**
  * An object containing alpha values.  It appropriately handles

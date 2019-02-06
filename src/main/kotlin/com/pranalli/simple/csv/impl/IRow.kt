@@ -1,4 +1,4 @@
-package com.pranalli.simpleCsv.impl
+package com.pranalli.simple.csv.impl
 
 /**
  * The [IRow] interface is a simple wrapper for any given collection of members of the

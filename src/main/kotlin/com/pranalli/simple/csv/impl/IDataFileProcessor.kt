@@ -1,4 +1,4 @@
-package com.pranalli.simpleCsv.impl
+package com.pranalli.simple.csv.impl
 
 /**
  * @author Pasquale A. Ranalli

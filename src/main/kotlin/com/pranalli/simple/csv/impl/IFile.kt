@@ -1,4 +1,4 @@
-package com.pranalli.simpleCsv.impl
+package com.pranalli.simple.csv.impl
 
 /**
  * The [IFile] interface is a wrapper for any given collection of members of the

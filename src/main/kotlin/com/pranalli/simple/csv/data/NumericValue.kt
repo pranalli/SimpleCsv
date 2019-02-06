@@ -1,4 +1,4 @@
-package com.pranalli.simpleCsv.data
+package com.pranalli.simple.csv.data
 
 import java.math.BigDecimal
 
