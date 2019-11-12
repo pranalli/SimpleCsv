@@ -3,10 +3,7 @@ package com.pranalli.simple.csv
 import com.pranalli.simple.csv.data.CsvFile
 import com.pranalli.simple.csv.data.CsvRow
 import com.pranalli.simple.csv.data.CsvValue
-import java.io.File
-import java.io.FileReader
-import java.io.Reader
-import java.io.StringReader
+import java.io.*
 import java.lang.StringBuilder
 
 /**
@@ -17,7 +14,7 @@ import java.lang.StringBuilder
  * @author Pasquale A. Ranalli
  * @email pranalli@gmail.com
  */
-internal class CsvReader : AutoCloseable {
+internal class CsvReader : Closeable {
 
     internal fun read(file: File): CsvFile {
         return read(FileReader(file))
