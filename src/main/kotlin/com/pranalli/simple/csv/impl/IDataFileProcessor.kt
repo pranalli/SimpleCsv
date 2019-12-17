@@ -5,5 +5,5 @@ package com.pranalli.simple.csv.impl
  * @email pranalli@gmail.com
  */
 interface IDataFileProcessor {
-    fun <R : IField<Any>, T : IRow<R>> read(path: String) : IFile <R, T> 
+    fun <R : IField<Any>, T : IRow<R>> read(path: String): IFile<R, T>
 }

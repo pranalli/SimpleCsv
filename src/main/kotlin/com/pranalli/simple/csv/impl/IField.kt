@@ -7,6 +7,6 @@ package com.pranalli.simple.csv.impl
  * @author Pasquale A. Ranalli
  * @email pranalli@gmail.com
  */
-interface IField <T : Any> {
-    fun getValue() : T
+interface IField<T : Any> {
+    fun getValue(): T
 }

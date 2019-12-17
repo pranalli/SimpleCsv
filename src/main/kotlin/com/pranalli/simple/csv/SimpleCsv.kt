@@ -23,7 +23,7 @@ object SimpleCsv {
      * @return A [CsvFile] instance representing the contents of the file
      */
     @JvmStatic
-    fun read(file: File) : CsvFile = CsvReader().use { it.read(file) }
+    fun read(file: File): CsvFile = CsvReader().use { it.read(file) }
 
     /**
      * Reads CSV data from a CSV string.
@@ -32,7 +32,7 @@ object SimpleCsv {
      * @return A [CsvFile] instance representing the contents of the [String]
      */
     @JvmStatic
-    fun read(csvString: String) : CsvFile = CsvReader().use { it.read(csvString) }
+    fun read(csvString: String): CsvFile = CsvReader().use { it.read(csvString) }
 
     /**
      * Creates a [CsvBuilder] instance to be used for creating a [CsvFile]
@@ -40,7 +40,7 @@ object SimpleCsv {
      * @return A [CsvBuilder] instance
      */
     @JvmStatic
-    fun build() : CsvBuilder = CsvBuilder()
+    fun build(): CsvBuilder = CsvBuilder()
 
     /**
      * The [CsvBuilder] class may be used in a builder-pattern to construct

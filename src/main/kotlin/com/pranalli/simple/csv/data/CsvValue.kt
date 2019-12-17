@@ -9,14 +9,14 @@ import com.pranalli.simple.csv.impl.IField
  * @email pranalli@gmail.com
  */
 abstract class CsvValue : IField<Any> {
-    abstract fun getSerializedValue() : String
+    abstract fun getSerializedValue(): String
 
     override fun toString(): String {
         return getSerializedValue()
     }
 
     companion object {
-        fun of(value: Any) : CsvValue {
+        fun of(value: Any): CsvValue {
             return when (value) {
                 is CharSequence -> {
                     AlphaValue(value)

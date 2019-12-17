@@ -4,7 +4,6 @@ import com.pranalli.simple.csv.data.CsvFile
 import com.pranalli.simple.csv.data.CsvRow
 import com.pranalli.simple.csv.data.CsvValue
 import java.io.*
-import java.lang.StringBuilder
 
 /**
  * CsvReader is an internal utility class that is encapsulated
@@ -20,22 +19,22 @@ internal class CsvReader : Closeable {
         return read(FileReader(file))
     }
 
-    internal fun read(csvString: String) : CsvFile {
+    internal fun read(csvString: String): CsvFile {
         return read(StringReader(csvString))
     }
 
-    private fun read(r: Reader) : CsvFile {
+    private fun read(r: Reader): CsvFile {
         val csv = CsvFile()
         r.useLines { lines ->
-            lines.forEach {
-                line -> csv.add(processLine(line))
+            lines.forEach { line ->
+                csv.add(processLine(line))
             }
         }
 
         return csv
     }
 
-    private fun processLine(line: String) : CsvRow {
+    private fun processLine(line: String): CsvRow {
         var insideQuote = false
         var sb = StringBuilder()
         val row = CsvRow()
@@ -55,7 +54,8 @@ internal class CsvReader : Closeable {
         return row
     }
 
-    override fun close() { /* Not used currently */ }
+    override fun close() { /* Not used currently */
+    }
 
     companion object {
         private const val DELIMITER = ','

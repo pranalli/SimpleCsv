@@ -8,7 +8,7 @@ import java.util.*
  * @author Pasquale A. Ranalli
  * @email pranalli@gmail.com
  */
-class CsvFile internal constructor(): IFile<CsvValue, CsvRow> {
+class CsvFile internal constructor() : IFile<CsvValue, CsvRow> {
     private val _rows = ArrayList<CsvRow>()
 
     internal constructor(rows: Collection<CsvRow>) : this() {
@@ -23,7 +23,7 @@ class CsvFile internal constructor(): IFile<CsvValue, CsvRow> {
         this._rows.addAll(rows)
     }
 
-    override fun getRows() : Collection<CsvRow> {
+    override fun getRows(): Collection<CsvRow> {
         return Collections.unmodifiableCollection(_rows)
     }
 

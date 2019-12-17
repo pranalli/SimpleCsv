@@ -7,7 +7,7 @@ package com.pranalli.simple.csv.impl
  * @author Pasquale A. Ranalli
  * @email pranalli@gmail.com
  */
-interface IRow <T : IField<Any>> {
-    fun getValues() : Collection<T>
+interface IRow<T : IField<Any>> {
+    fun getValues(): Collection<T>
 }
 

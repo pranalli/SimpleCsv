@@ -12,10 +12,10 @@ import java.math.BigDecimal
 class NumericValue(number: Number) : CsvValue() {
 
     private val _num: BigDecimal =
-        when (number) {
-            is BigDecimal -> number
-            else -> BigDecimal(number.toDouble())
-    }
+            when (number) {
+                is BigDecimal -> number
+                else -> BigDecimal(number.toDouble())
+            }
 
     override fun getValue(): BigDecimal {
         return _num
